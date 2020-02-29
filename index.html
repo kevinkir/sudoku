@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- TODO: <link rel="icon" href="favicon.ico" /> -->
+    <meta name="description" content="Vanilla Sudoku app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sudoku</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <div class="sudoku-grid-container">
+      <header>
+        <h1 class="title">Sudoku</h1>
+        <span class="buttons-outer-container">
+          <div class="buttons-inner-container">
+            <label>Level</label>
+            <select class="level-dropdown" type="dropdown">
+              <option name="easy" value="easy">easy</option>
+              <option name="medium" value="medium">medium</option>
+              <option name="hard" value="hard">hard</option>
+            </select>
+            <button class="new-game-button">New game</button>
+            <button class="check-button">Check</button>
+          </div>
+        </span>
+      </header>
+      <table class="sudoku-grid">
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+        <tr class="sudoku-grid-row">
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+          <td class="sudoku-grid-cell">
+            <input type="text" class="sudoku-grid-cell-input" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+:root {
+    --title-height: 80px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: horizontal;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    height: var(--title-height);
+    box-sizing: border-box;
+    margin: auto;
+    line-height: var(--title-height);
+    width: 100%;
+    text-align: center;
+}
+
+.buttons-outer-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    height: var(--title-height);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sudoku-grid-container {
+    width: min(100vw, 100vh);
+    height: min(100vw, 100vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.sudoku-grid {
+    width: 100%;
+    height: calc(100% - var(--title-height));
+    border-collapse: collapse;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+.sudoku-grid-cell {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.sudoku-grid-cell:nth-child(3), .sudoku-grid-cell:nth-child(6) {
+    border-right-width: 3px;
+}
+
+.sudoku-grid-row:nth-child(3), .sudoku-grid-row:nth-child(6) {
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: black;
+}
+
+.sudoku-grid-cell-input {
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 4vh;
+    text-align: center;
+}

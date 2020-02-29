@@ -1,0 +1,11 @@
+{
+  "name": "sudoku",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "http-server"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}
