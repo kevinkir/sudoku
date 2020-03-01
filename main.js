@@ -16,11 +16,9 @@ window.onload = () => {
 
     document.querySelector('.check-button').addEventListener('click', () => {
         if (context.game.check()) {
-            console.log('valid!');
-            // TODO: Mark the puzzle as solved somehow.
+            alert('Compete!');
         } else {
-            console.log('not solved!');
-            // TODO: highlight missing squares?
+            alert('Solution is incorrect!');
         }
     });
 
@@ -52,7 +50,7 @@ window.onload = () => {
         });
     }
 
-    newGame();
-
     document.querySelector('.new-game-button').addEventListener('click', newGame);
+
+    newGame();
 };
