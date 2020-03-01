@@ -5,7 +5,9 @@ import { createSolution } from './create-solution.js';
 import { range, shuffledRange } from './utils.js';
 
 function numStartingSquaresForLevel(gridWidth, level) {
-    return Math.floor(gridWidth ** 2 / (level * 3));
+    const totalSquares = gridWidth ** 2;
+    const fractionOfSquares = 0.6 - level / 10;
+    return Math.floor(totalSquares * fractionOfSquares);
 }
 
 export function convert1DIndexTo2DIndex(gridWidth, oneDimensionalIndex) {
