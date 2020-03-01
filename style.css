@@ -16,6 +16,12 @@ header {
     width: 100%;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .title {
     height: var(--title-height);
     box-sizing: border-box;
