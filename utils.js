@@ -41,7 +41,7 @@ function swap(arr, i, j) {
 
 export function shuffleInPlace(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
-        const j = random(arr.length - i);
+        const j = i + random(arr.length - i);
         swap(arr, i, j);
     }
 }
